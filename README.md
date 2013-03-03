@@ -16,6 +16,8 @@ $bst = new danlex\bst\BinarySearchTree();
 $bst->insert(1);
 $bst->insert(2);
 $bst->insert(3);
+
 or
+
 $bst = new danlex\bst\BinarySearchTree();
 $avl->createFromArray($a);
