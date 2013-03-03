@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-0": {
-            "danlex\bst": ""
+            "danlex\bst": "dev-master"
         }
     }
 }
