@@ -8,6 +8,11 @@ namespace danlex\bst;
 class AvlTree extends BinarySearchTree{
 
     /*
+    * Insert a new node in the tree
+    * We compare the vaue to inset with the value 
+    * of the current node. We continue recursive in the left subree 
+    * if the value of the current node > the value to insert.
+    * After we insert the new node we rebalance the tree.
     * @param int $data
     * @return AvlTree
     */
@@ -22,6 +27,13 @@ class AvlTree extends BinarySearchTree{
         return $this;
     }
 
+    /*
+    * Calculate the balance, the diffrence between 
+    * the height of the left subtree and the height
+    * of the right subtree of the curret node
+    * @param Ndde $node
+    * @return int
+    */
     public function balance (Node $node = NULL){
         if ($node === NULL){
             return 0;
@@ -29,6 +41,13 @@ class AvlTree extends BinarySearchTree{
         return $this->height($node->getLeftNode()) - $this->height($node->getRightNode());
     }
 
+    /*
+    * Calculate the height of the tree
+    * The height is the 1 + maxim of the height 
+    * of the left and right subtree
+    * @param Node $node
+    * @return int
+    */
     public function height(Node $node = NULL){
         if ($node === NULL){
              return 0;
