@@ -10,19 +10,19 @@ namespace danlex\bst;
 */
 class Node {
 
-    /**
+    /*
     * @access private
     * @var int 
     */
     private $data = NULL;
     
-    /**
+    /*
     * @access private
     * @var Node 
     */
     private $leftNode = NULL;
     
-    /**
+    /*
     * @access private
     * @var Node
     */
