@@ -4,6 +4,9 @@ namespace danlex\bst;
 
 /*
 * Tree Node 
+* @package danlex
+* @subpackage bst
+* @author Alexandru Dan <dan_lex@yahoo.com>
 */
 class Node {
 
