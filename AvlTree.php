@@ -4,6 +4,8 @@ namespace danlex\bst;
 
 /*
 * Balanced Binary Search Tree
+* @package danlex\bst
+* @author dan_lex@yahoo.com
 */
 class AvlTree extends BinarySearchTree{
 
